@@ -1,0 +1,176 @@
+23s1085@O-LT-006898 desktop % git clone https://github.com/aravindhkumar022007-web/surprise-.git
+Cloning into 'surprise-'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (3/3), done.
+23s1085@O-LT-006898 desktop % cd surprise-
+23s1085@O-LT-006898 surprise- % touch apple.txt micro.txt
+23s1085@O-LT-006898 surprise- % nano apple.txt
+23s1085@O-LT-006898 surprise- % git add apple.txt
+23s1085@O-LT-006898 surprise- % git commit -m "added apple.txt" apple.txt
+[main a272767] added apple.txt
+ Committer: 23s1085 <23s1085@O-LT-006898.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 11 insertions(+)
+ create mode 100644 apple.txt
+23s1085@O-LT-006898 surprise- % ls
+apple.txt	micro.txt	README.md
+23s1085@O-LT-006898 surprise- % cat apple.txt
+1] git init
+2] git config user.name "aravindh"
+3] git config user.email "aravindhkumar022007@gmail.com"
+4] touch a{1...2}.txt
+5] git add .
+6] git commit -m "added a1.txt" a1.txt
+7] git remote add origin https://github.com/aravindhkumar022007-web/surprise-.git
+8] git push origin branch name
+9] git pull origin branch name 
+
+
+23s1085@O-LT-006898 surprise- % git commit -m "added apple.txt" apple.txt
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	micro.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+23s1085@O-LT-006898 surprise- % nano micro.txt
+23s1085@O-LT-006898 surprise- % git add .
+23s1085@O-LT-006898 surprise- % git commit -m "added micro.txt" micro.txt
+[main 486a152] added micro.txt
+ Committer: 23s1085 <23s1085@O-LT-006898.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 6 insertions(+)
+ create mode 100644 micro.txt
+23s1085@O-LT-006898 surprise- % git branch surprise
+23s1085@O-LT-006898 surprise- % touch unix.txt
+23s1085@O-LT-006898 surprise- % nano unix.txt
+23s1085@O-LT-006898 surprise- % git add .
+23s1085@O-LT-006898 surprise- % git commit -m "added unix.txt"unix.txt
+[main dc324d1] added unix.txtunix.txt
+ Committer: 23s1085 <23s1085@O-LT-006898.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 6 insertions(+)
+ create mode 100644 unix.txt
+23s1085@O-LT-006898 surprise- % git switch main
+Already on 'main'
+Your branch is ahead of 'origin/main' by 3 commits.
+  (use "git push" to publish your local commits)
+23s1085@O-LT-006898 surprise- % git branch
+* main
+  surprise
+23s1085@O-LT-006898 surprise- % git surprise
+git: 'surprise' is not a git command. See 'git --help'.
+23s1085@O-LT-006898 surprise- % git branch
+* main
+  surprise
+23s1085@O-LT-006898 surprise- % git checkout -b amazon.txt
+Switched to a new branch 'amazon.txt'
+23s1085@O-LT-006898 surprise- % nano amazon.txt
+23s1085@O-LT-006898 surprise- % git add .
+23s1085@O-LT-006898 surprise- % git commit -m "added amazon.txt"amazon.txt
+[amazon.txt abb9c8f] added amazon.txtamazon.txt
+ Committer: 23s1085 <23s1085@O-LT-006898.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 4 insertions(+)
+ create mode 100644 amazon.txt
+23s1085@O-LT-006898 surprise- % git switch main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 3 commits.
+  (use "git push" to publish your local commits)
+23s1085@O-LT-006898 surprise- % git merge surprise
+Already up to date.
+23s1085@O-LT-006898 surprise- % ls
+apple.txt	micro.txt	README.md	unix.txt
+23s1085@O-LT-006898 surprise- % ls
+apple.txt	micro.txt	README.md	unix.txt
+23s1085@O-LT-006898 surprise- % ls
+apple.txt	micro.txt	README.md	unix.txt
+23s1085@O-LT-006898 surprise- % ls
+apple.txt	micro.txt	README.md	unix.txt
+23s1085@O-LT-006898 surprise- % ls
+apple.txt	micro.txt	README.md	unix.txt
+23s1085@O-LT-006898 surprise- % ls
+apple.txt	micro.txt	README.md	unix.txt
+23s1085@O-LT-006898 surprise- % git log --oneline
+dc324d1 (HEAD -> main) added unix.txtunix.txt
+486a152 (surprise) added micro.txt
+a272767 added apple.txt
+474bda4 (origin/main, origin/HEAD) Initial commit
+23s1085@O-LT-006898 surprise- % git git log --oneline
+git: 'git' is not a git command. See 'git --help'.
+
+The most similar command is
+	init
+23s1085@O-LT-006898 surprise- % git log --oneline    
+dc324d1 (HEAD -> main) added unix.txtunix.txt
+486a152 (surprise) added micro.txt
+a272767 added apple.txt
+474bda4 (origin/main, origin/HEAD) Initial commit
+23s1085@O-LT-006898 surprise- % git switch main
+Already on 'main'
+Your branch is ahead of 'origin/main' by 3 commits.
+  (use "git push" to publish your local commits)
+23s1085@O-LT-006898 surprise- % git switch main
+Already on 'main'
+Your branch is ahead of 'origin/main' by 3 commits.
+  (use "git push" to publish your local commits)
+23s1085@O-LT-006898 surprise- % ls
+apple.txt	micro.txt	README.md	unix.txt
+23s1085@O-LT-006898 surprise- %    
+23s1085@O-LT-006898 surprise- % git rename main master
+git: 'rename' is not a git command. See 'git --help'.
+
+The most similar command is
+	rebase
+23s1085@O-LT-006898 surprise- % git branch  main master
+fatal: a branch named 'main' already exists
+23s1085@O-LT-006898 surprise- % git branch -m main master

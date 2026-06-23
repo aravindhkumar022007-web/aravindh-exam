@@ -106,3 +106,24 @@ Switched to branch 'main'
 2fc62f5 added 2.txt
 2df731b added 1.txt
 23s1085@O-LT-006898 main % 
+23s1085@O-LT-006898 main % git switch feature1
+Switched to branch 'feature1'
+23s1085@O-LT-006898 main % git merge sub-feature1
+Merge made by the 'ort' strategy.
+ 8.txt | 0
+ 9.txt | 0
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 8.txt
+ create mode 100644 9.txt
+23s1085@O-LT-006898 main % git switch master
+fatal: invalid reference: master
+23s1085@O-LT-006898 main % git switch main  
+Switched to branch 'main'
+23s1085@O-LT-006898 main % git merge feature2
+Merge made by the 'ort' strategy.
+ 5.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 5.txt
+23s1085@O-LT-006898 main % git switch main   
+Already on 'main'
+23s1085@O-LT-006898 main % git merge feature2

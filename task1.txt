@@ -1,0 +1,129 @@
+23s1085@O-LT-006898 master % cd ..
+23s1085@O-LT-006898 .Trash % cd ..
+23s1085@O-LT-006898 ~ %  cd desktop
+23s1085@O-LT-006898 desktop % mkdir main
+23s1085@O-LT-006898 desktop % cd main
+23s1085@O-LT-006898 main % git init 
+Initialized empty Git repository in /Users/23s1085/Desktop/main/.git/
+23s1085@O-LT-006898 main % git config user.name "aravindh" 
+23s1085@O-LT-006898 main % git config user.email "aravindh@gmail.com"
+23s1085@O-LT-006898 main % touch a{1..3}.txt                         
+23s1085@O-LT-006898 main % git add .
+23s1085@O-LT-006898 main % git commit -m "c1:added a1.txt" a1.txt
+[main (root-commit) 1c3d493] c1:added a1.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 a1.txt
+23s1085@O-LT-006898 main % git commit -m "c2:added a2.txt" a2.txt
+[main 4292eed] c2:added a2.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 a2.txt
+23s1085@O-LT-006898 main % git commit -m "c3:added a3.txt" a3.txt
+[main d4a225b] c3:added a3.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 a3.txt
+23s1085@O-LT-006898 main % touch a4.txt
+23s1085@O-LT-006898 main % git checkout -b feature1
+Switched to a new branch 'feature1'
+23s1085@O-LT-006898 main % git init 
+Reinitialized existing Git repository in /Users/23s1085/Desktop/main/.git/
+23s1085@O-LT-006898 main % git config user.name "aravindh"           
+23s1085@O-LT-006898 main % git config user.email "aravindh@gmail.com"
+23s1085@O-LT-006898 main % touch b{1..2}.txt
+23s1085@O-LT-006898 main % git add .
+23s1085@O-LT-006898 main % git commit -m "x1:added b1.txt" b1.txt 
+[feature1 51d6825] x1:added b1.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 b1.txt
+23s1085@O-LT-006898 main % git commit -m "x2:added b2.txt" b2.txt
+[feature1 f8faa82] x2:added b2.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 b2.txt
+23s1085@O-LT-006898 main % git add .
+23s1085@O-LT-006898 main % git commit -m "c4:added a4.txt" a4.txt
+[feature1 63ffb2b] c4:added a4.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 a4.txt
+23s1085@O-LT-006898 main % touch a5.txt
+23s1085@O-LT-006898 main % git checkout -b feature2
+Switched to a new branch 'feature2'
+23s1085@O-LT-006898 main % git init
+Reinitialized existing Git repository in /Users/23s1085/Desktop/main/.git/
+23s1085@O-LT-006898 main % git config user.name "aravindh"           
+23s1085@O-LT-006898 main % git config user.email "aravindh@gmail.com"
+23s1085@O-LT-006898 main % touch c1.txt
+23s1085@O-LT-006898 main % git commit -m "y1:added c1.txt"c1.txt
+On branch feature2
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	a5.txt
+	c1.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+23s1085@O-LT-006898 main % git add .
+23s1085@O-LT-006898 main % git commit -m "y1:added c1.txt"c1.txt
+[feature2 c5fbd6d] y1:added c1.txtc1.txt
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 a5.txt
+ create mode 100644 c1.txt
+23s1085@O-LT-006898 main % nano y1.txt
+23s1085@O-LT-006898 main % git add .
+23s1085@O-LT-006898 main % git commit -m "y2:added y1.txt" y1.txt
+[feature2 cc86dd7] y2:added y1.txt
+ 1 file changed, 1 insertion(+)
+ create mode 100644 y1.txt
+23s1085@O-LT-006898 main % git switch main
+Switched to branch 'main'
+23s1085@O-LT-006898 main % nano a2.txt
+23s1085@O-LT-006898 main % git commit -m "c5:added a2.txt"a5.txt
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   a2.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+23s1085@O-LT-006898 main % git add .
+23s1085@O-LT-006898 main % git commit -m "c5:added a2.txt"a5.txt
+[main 571020c] c5:added a2.txta5.txt
+ 1 file changed, 1 insertion(+)
+23s1085@O-LT-006898 main % git log --oneline
+571020c (HEAD -> main) c5:added a2.txta5.txt
+d4a225b c3:added a3.txt
+4292eed c2:added a2.txt
+1c3d493 c1:added a1.txt
+23s1085@O-LT-006898 main % git remote add origin https://github.com/aravindhkumar022007-web/task-1.git
+23s1085@O-LT-006898 main % git push origin feature1
+Enumerating objects: 13, done.
+Counting objects: 100% (13/13), done.
+Delta compression using up to 10 threads
+Compressing objects: 100% (11/11), done.
+Writing objects: 100% (13/13), 1.06 KiB | 1.06 MiB/s, done.
+Total 13 (delta 4), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/aravindhkumar022007-web/task-1.git
+ * [new branch]      feature1 -> feature1
+23s1085@O-LT-006898 main % git push origin feature2
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 10 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (5/5), 457 bytes | 457.00 KiB/s, done.
+Total 5 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+remote: 
+remote: Create a pull request for 'feature2' on GitHub by visiting:
+remote:      https://github.com/aravindhkumar022007-web/task-1/pull/new/feature2
+remote: 
+To https://github.com/aravindhkumar022007-web/task-1.git
+ * [new branch]      feature2 -> feature2
+23s1085@O-LT-006898 main % git branch 
+  feature1
+  feature2
+* main
+23s1085@O-LT-006898 main % git branch -a
+  feature1
+  feature2
+* main
+  remotes/origin/feature1
+  remotes/origin/feature2
+23s1085@O-LT-006898 main % 
+23s1085@O-LT-006898 main % 
